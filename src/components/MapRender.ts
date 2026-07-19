@@ -5,6 +5,7 @@ import { config } from '../config'
 import type { Trip } from '../types'
 import { getAnchorIcon, getMarkerIcon } from '../util/map'
 import { Act, subscribe } from '../state/action'
+import { dropIn, toText } from 'drop.that'
 
 // status: 0 = missing, 1 = incomplete, 2 = full, 3 = reconstructed
 const StatusColor = ['cc0000', 'ffaa00', '008800', '004488']
@@ -19,7 +20,17 @@ const mapViewAll = (): L.Map => {
   return map
 }
 
-subscribe([Act.VIEW_GLOBE], mapViewAll)
+const uploadTrack = async () => {
+  // TODO: workarount to raise overlay z-index
+  setTimeout(() => {
+    ;[...document.getElementsByClassName('dropin')][0].setAttribute('style', 'z-index:9999')
+  }, 1)
+  void dropIn({
+    placeholderText: 'drop, upload or paste GPS track\nin GPX, KML or CSV format',
+  })
+    .then(toText)
+    .then(showTrack)
+}
 
 export const renderMap = () => {
   map = L.map(Map.getView() as HTMLElement)
@@ -31,9 +42,7 @@ export const renderMap = () => {
   return map
 }
 
-export const showTrack = async (trip: Trip) => {
-  const input = await fetch(`./tracks/${trip.name}/track.csv`)
-  const text = await input.text()
+export const showTrack = async (text: string) => {
   const tracks = parse(text)
   const output = simplify(tracks, 0.000005) as TrkPoint[][]
   const bbox = getBBox(output)
@@ -50,12 +59,18 @@ export const showTrack = async (trip: Trip) => {
   })
 }
 
+export const showTrip = async (trip: Trip) => {
+  const input = await fetch(`./tracks/${trip.name}/track.csv`)
+  const text = await input.text()
+  await showTrack(text)
+}
+
 export const showTripMarker = (trip: Trip) => {
   const start = L.marker(trip.place.location.reverse() as LatLngExpression, {
     icon: getMarkerIcon(StatusColor[trip.status]),
   })
     .on('click', () => {
-      void showTrack(trip)
+      void showTrip(trip)
     })
     .addTo(tripsLayer)
   return start
@@ -69,3 +84,6 @@ export const showTrips = async () => {
   mapViewAll()
   return map
 }
+
+subscribe([Act.VIEW_GLOBE], mapViewAll)
+subscribe([Act.UPLOAD_TRACK], uploadTrack)

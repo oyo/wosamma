@@ -7,7 +7,7 @@ class ViewButtonSingle extends Viewable {
     super()
     this.view = addEvents(
       N('button', N('img', undefined, { src: 'img/icon/earth.svg' }), {
-        class: 'button view-button',
+        class: 'view-button',
       }),
       {
         click: () =>

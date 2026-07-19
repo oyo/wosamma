@@ -21,3 +21,7 @@ button {
 button:hover {
   background-color: #eee;
 }
+
+.dropin {
+  z-index: 9999;
+}

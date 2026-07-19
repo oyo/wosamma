@@ -1,6 +1,6 @@
 {
   "name": "wosamma",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "description": "A map visualization of GPS tracks from past sailing trips",
   "keywords": [
@@ -28,6 +28,7 @@
     "simplify": "ts-node ./src/scripts/simplify.ts"
   },
   "dependencies": {
+    "drop.that": "^0.1.1",
     "leaflet": "^1.9.4",
     "trackutil": "^0.0.9",
     "vite-plugin-node-polyfills": "^0.28.0"
