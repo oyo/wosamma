@@ -1,0 +1,375 @@
+[
+  {
+    "name": "2012-Toulon",
+    "date": ["2012-04-01", "2012-04-07"],
+    "crew": 7,
+    "status": 0,
+    "place": {
+      "sea": "Côte d'Azur, Mediterranean Sea",
+      "base": "Port Pin Rolland, Toulon, France",
+      "location": [5.8954876, 43.0779444]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Dufour 45",
+      "build": 2008
+    },
+    "desc": "Training cruise for the SKS sailing license."
+  },
+  {
+    "name": "2013-Zadar",
+    "date": ["2013-08-03", "2013-08-09"],
+    "crew": 3,
+    "status": 2,
+    "place": {
+      "sea": "Zadar Achipelago, Adriatic Sea, Mediterranean Sea",
+      "base": "Olive Island Marina, Sutomišćica, Ugljan, Dalmatia, Croatia",
+      "location": [15.168768173344816, 44.0959865207756]
+    },
+    "boat": {
+      "name": "Slađana",
+      "model": "Beneteau First 36.7",
+      "build": 2002
+    }
+  },
+  {
+    "name": "2014-Athens",
+    "date": ["2014-05-17", "2014-05-23"],
+    "crew": 2,
+    "status": 2,
+    "place": {
+      "sea": "Saronic Islands, Aegean Sea, Mediterranean Sea",
+      "base": "Marina Alimos, Kalamaki, Athens, Greece",
+      "location": [23.706613530303205, 37.91265038807441]
+    },
+    "boat": {
+      "name": "Anna",
+      "model": "Elan 310",
+      "build": 2012
+    },
+    "desc": "Our first sailing trip after we got the licenses."
+  },
+  {
+    "name": "2014-Mallorca",
+    "date": ["2014-08-30", "2014-09-05"],
+    "crew": 5,
+    "status": 2,
+    "place": {
+      "sea": "Balearic Islands, Mediterranean Sea",
+      "base": "Marina Port de Mallorca, Palma de Mallorca, Spain",
+      "location": [2.6381583379995797, 39.56664032615529]
+    },
+    "boat": {
+      "name": "Ocellot Blue",
+      "model": "Beneteau Oceanis 40",
+      "build": 2007
+    }
+  },
+  {
+    "name": "2014-Portoroz",
+    "date": ["2014-10-25", "2014-11-01"],
+    "crew": 4,
+    "status": 1,
+    "place": {
+      "sea": "Adriatic Sea, Mediterranean Sea",
+      "base": "Marina Portorož, Slovenia",
+      "location": [13.595969837002597, 45.505381022566446]
+    },
+    "boat": {
+      "name": "Apolonia",
+      "model": "Dufour 310 GL",
+      "build": 2014
+    },
+    "desc": "Halfway through the voyage, the forestay snapped, nearly causing the mast to collapse. We then transferred to another vessel."
+  },
+  {
+    "name": "2015-Marmaris",
+    "date": ["2015-05-16", "2015-05-22"],
+    "crew": 5,
+    "status": 0,
+    "place": {
+      "sea": "Turkish Riviera, Aegean Sea, Mediterranean Sea",
+      "base": "Netsel Marina, Marmaris, Muğla, Turkey",
+      "location": [28.278509, 36.851261]
+    },
+    "boat": {
+      "name": "Daddy Cool",
+      "model": "Sun Odyssey 49i",
+      "build": 2011
+    }
+  },
+  {
+    "name": "2015-Trogir",
+    "date": ["2015-05-30", "2015-06-05"],
+    "crew": 7,
+    "status": 2,
+    "place": {
+      "sea": "Adriatic Sea, Mediterranean Sea",
+      "base": "ACI Marina Trogir, Trogir, Dalmatia, Croatia",
+      "location": [16.249937, 43.51411]
+    },
+    "boat": {
+      "name": "Barolo",
+      "model": "Bavaria 50",
+      "build": 2007
+    }
+  },
+  {
+    "name": "2015-Halkidiki",
+    "date": ["2015-09-05", "2015-09-12"],
+    "crew": 6,
+    "status": 0,
+    "place": {
+      "sea": "Aegean Sea, Mediterranean Sea",
+      "base": "Porto Koufo, Sithonia, Halkidiki, Greece",
+      "location": [23.919631, 39.970317]
+    },
+    "boat": {
+      "name": "Melodia",
+      "model": "Sun Odyssey 45.1",
+      "build": 2010
+    }
+  },
+  {
+    "name": "2016-Cienfuegos",
+    "date": ["2016-03-05", "2016-03-12"],
+    "crew": 3,
+    "status": 0,
+    "place": {
+      "sea": "Southern Cuba, Caribbean Sea",
+      "base": "Marina Marlin, Cienfuegos, Cuba",
+      "location": [-80.452701, 22.124975]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Kat Nautitech Open 40",
+      "build": 2014
+    }
+  },
+  {
+    "name": "2017-Lefkada",
+    "date": ["2017-05-01", "2017-05-07"],
+    "crew": 7,
+    "status": 0,
+    "place": {
+      "sea": "Ionian Sea, Mediterranean Sea",
+      "base": "Lefkada, Greece",
+      "location": [20.712621, 38.830656]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2015
+    }
+  },
+  {
+    "name": "2018-Port_Grimaud",
+    "date": ["2018-09-01", "2018-09-07"],
+    "crew": 7,
+    "status": 0,
+    "place": {
+      "sea": "Côte d’Azur, Mediterranean Sea",
+      "base": "Port Grimaud, France",
+      "location": [6.575383, 43.2719092]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Sun Odyssey 50",
+      "build": 2017
+    }
+  },
+  {
+    "name": "2019-BVI",
+    "date": ["2019-03-23", "2016-03-29"],
+    "crew": 7,
+    "status": 0,
+    "place": {
+      "sea": "British Virgin Islands, Caribbean Sea",
+      "base": "Scrub Island Marina, BVI",
+      "location": [-64.5244702, 18.4663951]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Kat Bali 4.0",
+      "build": 2019
+    }
+  },
+  {
+    "name": "2019-Lefkada",
+    "date": ["2019-09-01", "2019-09-07"],
+    "crew": 8,
+    "status": 0,
+    "place": {
+      "sea": "Ionian Sea, Mediterranean Sea",
+      "base": "Lefkada, Greece",
+      "location": [20.711522, 38.833333]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2015
+    }
+  },
+  {
+    "name": "2020-Tenerife",
+    "date": ["2020-06-01", "2020-07-03"],
+    "crew": 4,
+    "status": 2,
+    "place": {
+      "sea": "Atlantic Ocean, Biscaya, English Channel, North Sea, East Sea",
+      "base": "Tenerife, Canarias, Spain",
+      "location": [-16.612483, 28.019785]
+    },
+    "boat": {
+      "name": "Wet and Wild",
+      "model": "Dehler Varianta 44",
+      "build": 2015
+    }
+  },
+  {
+    "name": "2020-Lavrio",
+    "date": ["2020-09-13", "2020-09-18"],
+    "crew": 9,
+    "status": 2,
+    "place": {
+      "sea": "Saronic Islands, Aegean Sea, Mediterranean Sea",
+      "base": "Lavrio, Greece",
+      "location": [24.060429, 37.712281]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2015
+    }
+  },
+  {
+    "name": "2021-Olbia",
+    "date": ["2021-07-11", "2021-07-16"],
+    "crew": 8,
+    "status": 2,
+    "place": {
+      "sea": "North-Eastern Sardinia, Thyrrenian Sea, Mediterranean Sea",
+      "base": "DYC Marina, Olbia, Sardinia, Italy",
+      "location": [9.53149999, 40.92480692]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2020
+    }
+  },
+  {
+    "name": "2021-Mallorca",
+    "date": ["2021-09-11", "2021-09-17"],
+    "crew": 9,
+    "status": 2,
+    "place": {
+      "sea": "Balearic Islands, Mediterranean Sea",
+      "base": "Palma de Mallorca, Spain",
+      "location": [2.64209867, 39.56770802]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2018
+    },
+    "desc": "On the evening of the fourth day, we anchored off the Mirador de Na Clara in the Bay of Alcúdia amidst very strong, gusty winds. We maintained anchor watches in two-person teams, with each shift lasting two hours. The windlass gypsy could not withstand the force of the gusts, causing the chain to gradually pay out; I misinterpreted the sounds this process created. Finally, in the morning, the end of the chain slipped through and fell to the seabed. The anchor and chain were resting at a depth of about 4 to 5 meters. A crew member dove down and passed a line underneath the taut chain, allowing us to haul both the chain and the anchor back on board. As a lesson learned, I now always rig a bridle in strong winds to distribute the load to the bow cleats as well."
+  },
+  {
+    "name": "2022-Cannigione",
+    "date": ["2022-06-12", "2022-06-17"],
+    "crew": 10,
+    "status": 2,
+    "place": {
+      "sea": "North-Eastern Sardinia, Thyrrenian Sea, Mediterranean Sea",
+      "base": "Cannigione, Sardinia, Italy",
+      "location": [9.44544608, 41.10773621]
+    },
+    "boat": {
+      "name": "Dafne",
+      "model": "Kat Bali 4.1",
+      "build": 2020
+    }
+  },
+  {
+    "name": "2022-Veruda",
+    "date": ["2022-09-04", "2022-09-09"],
+    "crew": 7,
+    "status": 2,
+    "place": {
+      "sea": "Adriatic Sea, Mediterranean Sea",
+      "base": "Veruda, Pula, Istria, Croatia",
+      "location": [13.8419067, 44.84019175]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Bavaria",
+      "build": 2018
+    }
+  },
+  {
+    "name": "2022-Split",
+    "date": ["2022-09-24", "2022-09-30"],
+    "crew": 4,
+    "status": 2,
+    "place": {
+      "sea": "Adriatic Sea, Mediterranean Sea",
+      "base": "Split, Dalmatia, Croatia",
+      "location": [16.43073255, 43.50266126]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2018
+    }
+  },
+  {
+    "name": "2023-Skradin",
+    "date": ["2023-09-05", "2023-09-08"],
+    "crew": 3,
+    "status": 2,
+    "place": {
+      "sea": "Adriatic Sea, Mediterranean Sea",
+      "base": "Skradin, Dalmatia, Croatia",
+      "location": [15.92077328, 43.81764098]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Unknown",
+      "build": 2018
+    }
+  },
+  {
+    "name": "2024-Portisco",
+    "date": ["2024-06-01", "2024-06-07"],
+    "crew": 8,
+    "status": 0,
+    "place": {
+      "sea": "North-Eastern Sardinia, Thyrrenian Sea, Mediterranean Sea",
+      "base": "Portisco, Sardinia, Italy",
+      "location": [9.523317, 41.035205]
+    },
+    "boat": {
+      "name": "Unknown",
+      "model": "Kat Bali 4.3",
+      "build": 2022
+    }
+  },
+
+  {
+    "name": "2026-Portorosa",
+    "date": ["2026-06-28", "2026-07-03"],
+    "crew": 7,
+    "status": 2,
+    "place": {
+      "sea": "Aeolian Islands, Thyrrenian Sea, Mediterranean Sea",
+      "base": "Portorosa Marina Yachting, Portorosa, Sicily, Italy",
+      "location": [15.11228333, 38.12219333]
+    },
+    "boat": {
+      "name": "Simba",
+      "model": "Dufour 41",
+      "build": 2025
+    }
+  }
+]
