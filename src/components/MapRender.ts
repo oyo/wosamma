@@ -10,18 +10,22 @@ import { Act, subscribe } from '../state/action'
 const StatusColor = ['cc0000', 'ffaa00', '008800', '004488']
 
 let map: L.Map
-let tripsLayer = new L.LayerGroup()
-let trackLayer = new L.LayerGroup()
+let tripsLayer = new L.FeatureGroup()
+let trackLayer = new L.FeatureGroup()
 
-const mapGlobeView = (): L.Map => map.setView(config.INITIAL_VIEW, config.INITIAL_ZOOM)
+const mapViewAll = (): L.Map => {
+  trackLayer.clearLayers()
+  map.fitBounds(tripsLayer.getBounds())
+  return map
+}
 
-subscribe([Act.VIEW_GLOBE], mapGlobeView)
+subscribe([Act.VIEW_GLOBE], mapViewAll)
 
 export const renderMap = () => {
   map = L.map(Map.getView() as HTMLElement)
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-  }).addTo(mapGlobeView())
+  }).addTo(map.setView(config.INITIAL_VIEW, config.INITIAL_ZOOM))
   tripsLayer.addTo(map)
   trackLayer.addTo(map)
   return map
@@ -60,8 +64,8 @@ export const showTripMarker = (trip: Trip) => {
 export const showTrips = async () => {
   const response = await fetch('./tracks/meta.json')
   const json = (await response.json()) as Trip[]
-  console.log(json)
   tripsLayer.clearLayers()
   json.map(showTripMarker)
+  mapViewAll()
   return map
 }
