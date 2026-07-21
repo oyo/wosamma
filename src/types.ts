@@ -22,7 +22,17 @@ export interface Trip {
   desc?: string
 }
 
-export type ActionValue = Trip | Point | string
+export interface SigninProfile {
+  email: string
+  name: string
+  picture: string
+}
+
+export interface SigninResponse {
+  profile: SigninProfile
+}
+
+export type ActionValue = string | Trip | Point | SigninResponse
 
 export interface Action {
   code: number
@@ -30,3 +40,8 @@ export interface Action {
 }
 
 export type ActionHandler = (action: Action) => void
+
+export type SubscriptionHandling = {
+  codes: number[]
+  handler: ActionHandler
+}

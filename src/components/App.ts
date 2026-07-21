@@ -1,12 +1,11 @@
 import { N, Viewable } from '../util/ui'
 import { Map } from './Map'
-import { UploadButton } from './ui/UploadButton'
-import { ViewButton } from './ui/ViewButton'
+import { ButtonBar } from './ui/ButtonBar'
 
 class AppSingle extends Viewable {
   constructor() {
     super()
-    this.view = N('div', [Map, ViewButton, UploadButton], { class: 'app' })
+    this.view = N('div', [Map, ButtonBar], { class: 'app' })
   }
   render() {
     Map.render()

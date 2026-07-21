@@ -3,9 +3,10 @@ import type { Action, ActionHandler } from '../types'
 type Subscription = Record<number, Set<ActionHandler>>
 
 export const Act = {
-  VIEW_GLOBE: 1,
-  VIEW_MEDITERRANEAN: 2,
-  UPLOAD_TRACK: 3,
+  SIGNIN: 1,
+  SIGNIN_RESPONSE: 2,
+  VIEW_GLOBE: 3,
+  UPLOAD_TRACK: 4,
 }
 
 const subscriber: Subscription = Object.values(Act).reduce(

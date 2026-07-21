@@ -27,6 +27,7 @@ const uploadTrack = async () => {
   }, 1)
   void dropIn({
     placeholderText: 'drop, upload or paste GPS track\nin GPX, KML or CSV format',
+    startButtonText: 'import',
   })
     .then(toText)
     .then(showTrack)

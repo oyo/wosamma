@@ -3,6 +3,10 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 export default defineConfig({
   base: '/wosamma/',
+  server: {
+    port: 3000,
+    strictPort: true,
+  },
   staged: {
     '*': 'vp check --fix',
   },

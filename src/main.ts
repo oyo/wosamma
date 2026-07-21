@@ -1,4 +1,5 @@
+import { auth } from './auth/auth'
 import { App } from './components/App'
 import './style.css'
 
-App.appendTo(document.body).render()
+void auth().then(() => App.appendTo(document.body).render())
