@@ -41,6 +41,13 @@ jobs:
       - run: vp install
       - run: vp check
       # - run: vp test
+
+      - shell: bash
+        env:
+          OIDC_KEYS: ${{ secrets.OIDC_KEYS }}
+        run: |
+          echo $OIDC_KEYS > src/auth/secrets.json && vp run inject-auth
+
       - run: vp build
 
       - name: Setup Pages

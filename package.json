@@ -25,7 +25,8 @@
     "build": "tsc && vp build",
     "preview": "vp preview",
     "prepare": "vp config",
-    "simplify": "ts-node ./src/scripts/simplify.ts"
+    "simplify": "ts-node ./src/scripts/simplify.ts",
+    "inject-auth": "ts-node ./src/scripts/injectAuth.ts > src/auth/authSettings.json"
   },
   "dependencies": {
     "drop.that": "^0.1.1",

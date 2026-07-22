@@ -5,3 +5,5 @@ node_modules
 dist
 *.kml
 *.gpx
+secrets.json
+authSettings.env.ts
