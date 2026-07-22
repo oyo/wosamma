@@ -1,5 +1,5 @@
 import secrets from '../auth/secrets.json' with { type: 'json' }
-import authSettings from '../auth/authSettings.json' with { type: 'json' }
+import authSettings from '../auth/authSettings.template.json' with { type: 'json' }
 
 console.log(
   JSON.stringify(
