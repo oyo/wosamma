@@ -1,24 +1,25 @@
 export type Point = [number, number, number]
 
-export interface Boat {
-  name: string
+export interface Vehicle {
+  name?: string
   model: string
-  build: number
+  build?: number
 }
 
-export interface Place {
-  sea: string
+export interface Location {
+  area: string
   base: string
-  location: Point
+  start: Point
 }
 
 export interface Trip {
   name: string
   date: [string, string]
-  crew: number
+  type: number
+  team: number
   status: number
-  place: Place
-  boat: Boat
+  location: Location
+  vehicle: Vehicle
   desc?: string
 }
 

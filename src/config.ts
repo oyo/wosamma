@@ -6,3 +6,12 @@ export const config = {
   INITIAL_ZOOM: 4,
   LINE_COLOR: '#0066aa',
 }
+
+export const TrackType = {
+  HIKING: 1,
+  BIKING: 2,
+  MOTORBIKE: 3,
+  DRIVING: 4,
+  SAILING: 5,
+  FLYING: 6,
+}
