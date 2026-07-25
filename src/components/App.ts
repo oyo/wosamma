@@ -1,5 +1,5 @@
 import { N, Viewable } from '../util/ui'
-import { Map } from './Map'
+import { Map } from './map/Map'
 import { ButtonBar } from './ui/ButtonBar'
 
 class AppSingle extends Viewable {

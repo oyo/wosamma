@@ -1,17 +1,18 @@
 import L, { type LatLngExpression } from 'leaflet'
 import { Map } from './Map'
 import { getBBox, parse, simplify, type TrkPoint } from 'trackutil'
-import { config } from '../config'
-import type { Trip } from '../types'
-import { getAnchorIcon, getMarkerIcon } from '../util/map'
-import { Act, subscribe } from '../state/action'
+import { config } from '../../config'
+import type { Trip } from '../../types'
+import { getAnchorIcon, getMarkerIcon } from '../../util/map'
+import { Act, subscribe } from '../../state/action'
 import { dropIn, toText } from 'drop.that'
+import 'leaflet.markercluster'
 
 // status: 0 = missing, 1 = incomplete, 2 = full, 3 = reconstructed
 const StatusColor = ['cc0000', 'ffaa00', '008800', '448800']
 
 let map: L.Map
-let tripsLayer = new L.FeatureGroup()
+let tripsLayer = window.L.markerClusterGroup() //new L.FeatureGroup()
 let trackLayer = new L.FeatureGroup()
 
 const mapViewAll = (): L.Map => {

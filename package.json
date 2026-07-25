@@ -1,6 +1,6 @@
 {
   "name": "wosamma",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "description": "A map visualization of GPS tracks from past sailing trips",
   "keywords": [
@@ -31,12 +31,14 @@
   "dependencies": {
     "drop.that": "^0.1.1",
     "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
     "oidc-client-ts": "^3.5.0",
     "trackutil": "^0.0.9",
     "vite-plugin-node-polyfills": "^0.28.0"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.21",
+    "@types/leaflet.markercluster": "^1.5.6",
     "@types/node": "^26.1.1",
     "glob": "^13.0.6",
     "ts-node": "^10.9.2",
@@ -47,7 +49,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.16.0",
+      "version": "11.17.0",
       "onFail": "download"
     }
   }
