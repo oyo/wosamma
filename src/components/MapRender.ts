@@ -8,7 +8,7 @@ import { Act, subscribe } from '../state/action'
 import { dropIn, toText } from 'drop.that'
 
 // status: 0 = missing, 1 = incomplete, 2 = full, 3 = reconstructed
-const StatusColor = ['cc0000', 'ffaa00', '008800', 'aa00aa']
+const StatusColor = ['cc0000', 'ffaa00', '008800', '448800']
 
 let map: L.Map
 let tripsLayer = new L.FeatureGroup()
@@ -68,7 +68,7 @@ export const showTrip = async (trip: Trip) => {
 
 export const showTripMarker = (trip: Trip) => {
   const start = L.marker(trip.location.start.reverse() as LatLngExpression, {
-    icon: getMarkerIcon(StatusColor[trip.status]),
+    icon: getMarkerIcon(trip.type, StatusColor[trip.status]),
   })
     .on('click', () => {
       void showTrip(trip)

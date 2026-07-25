@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <style>.l{fill:none;stroke:#808080;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <g transform="translate(0,15)">
+    <circle class="l" cx="16" cy="30" r="13.5" />
+    <circle class="l" cx="65" cy="30" r="13.5" />
+    <path class="l" d="
+M 25 2
+l 8 0
+M 28 4
+l 9 26
+l 3 4
+M 37 30
+l -22 0
+l 14 -22
+l 26 0
+l 1 4
+l -19 18
+M 48 2
+l 6 0
+l 4.5 14
+a 30 30 0 0 0 6.5 14
+M 61 7 a 1 1 0 0 0 0 3
+z
+"/>
+  </g>
+</svg>

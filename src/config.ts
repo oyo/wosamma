@@ -8,10 +8,10 @@ export const config = {
 }
 
 export const TrackType = {
-  HIKING: 1,
-  BIKING: 2,
-  MOTORBIKE: 3,
-  DRIVING: 4,
-  SAILING: 5,
-  FLYING: 6,
+  HIKE: 1,
+  BIKE: 2,
+  MOBIKE: 3,
+  DRIVE: 4,
+  BOAT: 5,
+  FLY: 6,
 }

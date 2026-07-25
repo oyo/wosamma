@@ -1,5 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40">
-  <path fill="#808080" d="
-M 15 40 l -8.5 -20 a 10 10 0 1 1 17 0 z
-M 21 15 a 6 6 1 1 0 0 0.01 z"/>
+  <path fill="#818181" d="M 15 40 l -8.5 -20 a 10 10 0 1 1 17 0 z M 22 15 a 7 7 1 1 0 0 0.001 z"/>
 </svg>
