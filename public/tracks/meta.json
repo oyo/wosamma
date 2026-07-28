@@ -241,6 +241,23 @@
     }
   },
   {
+    "name": "2020-Munich-Straubing",
+    "date": ["2020-04-11", "2025-04-11"],
+    "type": 2,
+    "team": 1,
+    "status": 3,
+    "location": {
+      "area": "Munich to Straubing",
+      "base": "Munich, Germany",
+      "start": [11.56384, 48.13121]
+    },
+    "vehicle": {
+      "name": "Unknown",
+      "model": "Cube Nature Pro",
+      "build": 2018
+    }
+  },
+  {
     "name": "2020-Tenerife",
     "date": ["2020-06-01", "2020-07-03"],
     "type": 5,

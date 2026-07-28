@@ -8,6 +8,7 @@ Install [vite+](https://viteplus.dev/) then
 
 ```bash
 vp install
+vp run inject-auth
 vp run dev
 # press o + enter
 ```

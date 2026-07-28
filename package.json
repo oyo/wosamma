@@ -1,6 +1,6 @@
 {
   "name": "wosamma",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "description": "A map visualization of GPS tracks from past sailing trips",
   "keywords": [
@@ -26,10 +26,12 @@
     "preview": "vp preview",
     "prepare": "vp config",
     "simplify": "ts-node ./src/scripts/simplify.ts",
-    "inject-auth": "ts-node ./src/scripts/injectAuth.ts > src/auth/authSettings.json"
+    "inject-auth": "ts-node ./src/scripts/injectAuth.ts > src/auth/authSettings.json",
+    "check-jwt": "ts-node ./src/scripts/checkJWT.ts"
   },
   "dependencies": {
     "drop.that": "^0.1.1",
+    "jose": "^6.2.4",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
     "oidc-client-ts": "^3.5.0",

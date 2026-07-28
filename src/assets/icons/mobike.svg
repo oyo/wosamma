@@ -2,7 +2,7 @@
   <defs>
     <style>.w{fill:none;stroke:#808080;stroke-width:5;}.l{fill:#808080;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}</style>
   </defs>
-  <g transform="translate(-2,10)scale(1.2)">
+  <g transform="translate(-2,10)scale(1.18)">
     <circle class="w" cx="14" cy="30" r="9.4" />
     <circle class="w" cx="58" cy="30" r="9.4" />
     <path class="l" d="
